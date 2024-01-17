@@ -2,7 +2,6 @@ package com.belkatechnologies.bigquery.utils;
 
 import lombok.SneakyThrows;
 
-import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -37,8 +36,7 @@ public interface MetadataService {
      * @param schemaName The schema or dataset name.
      * @param tableName  The name of the table.
      * @return A list of {@link Column} objects representing table metadata.
-     * @throws SQLException If an SQL exception occurs during the metadata retrieval.
      */
     @SneakyThrows
-    List<Column> getTableMetaData(String project, String schemaName, String tableName) throws SQLException;
+    List<Column> getTableMetaData(String project, String schemaName, String tableName);
 }

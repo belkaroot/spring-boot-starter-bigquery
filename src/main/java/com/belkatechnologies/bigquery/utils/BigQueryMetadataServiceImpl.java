@@ -1,6 +1,5 @@
 package com.belkatechnologies.bigquery.utils;
 
-
 import com.google.cloud.bigquery.BigQuery;
 import com.google.cloud.bigquery.TableResult;
 import lombok.RequiredArgsConstructor;
@@ -8,11 +7,9 @@ import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
-import java.sql.SQLException;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
-
 
 @Slf4j
 @Component
@@ -45,7 +42,7 @@ public class BigQueryMetadataServiceImpl implements MetadataService {
 
     @SneakyThrows
     @Override
-    public List<Column> getTableMetaData(String project, String schemaName, String tableName) throws SQLException {
+    public List<Column> getTableMetaData(String project, String schemaName, String tableName) {
         final String TABLES = "select table_name, column_name, data_type from %s.%s.INFORMATION_SCHEMA.COLUMNS where table_name = '%s';";
         final String query = String.format(TABLES, project, schemaName, tableName);
         final TableResult result = bq.query(BqQueryUtils.createQuery(query));
