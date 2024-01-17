@@ -1,0 +1,8 @@
+bigquery:
+  data:
+    project: com-belka-analytics-test #repalce
+    keyFile: mock-test-key.json #repalce
+  streaming:
+    enabled: true
+    streamingManagerPoolSize: 100
+    asyncStreamingDelay: 10

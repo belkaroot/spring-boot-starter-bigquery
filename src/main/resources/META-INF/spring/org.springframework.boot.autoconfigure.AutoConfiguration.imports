@@ -1,0 +1,3 @@
+com.belkatechnologies.bigquery.configuration.BigQueryAutoConfiguration
+com.belkatechnologies.bigquery.configuration.SnapshotAutoConfiguration
+com.belkatechnologies.bigquery.configuration.StreamingAutoConfiguration

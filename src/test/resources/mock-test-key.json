@@ -1,0 +1,12 @@
+{
+  "type": "mock",
+  "project_id": "com-belka-analytics-test",
+  "private_key_id": "mock",
+  "private_key": "mock",
+  "client_email": "mock",
+  "client_id": "mock",
+  "auth_uri": "mock",
+  "token_uri": "mock",
+  "auth_provider_x509_cert_url": "mock",
+  "client_x509_cert_url": "mock"
+}
