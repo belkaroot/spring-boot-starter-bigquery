@@ -45,5 +45,5 @@ your record (or multiple records if you use the putBatchForTable method)
 is already in the table, streamed by managed processor.
 
 
-more documented examples - https://github.com/belkaroot/spring-boot-starter-bigquery-examples
-article - TBD
+- more documented examples - https://github.com/belkaroot/spring-boot-starter-bigquery-examples
+- article - https://medium.com/@belka_games/unleashing-bigquery-power-with-spring-boot-starter-f0bada97f550
